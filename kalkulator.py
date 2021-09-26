@@ -1,4 +1,5 @@
 import logging
+logging.basicConfig(level=logging.DEBUG)
 
 dzialanie = int(input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie:"))
 liczba_1 = input("Podaj składnik 1: ")
@@ -12,4 +13,4 @@ elif dzialanie == 3:
     informacja = "Mnożę"
 elif dzialanie == 4:
     informacja = "Dzielę"
-print(informacja)
+logging.info(f"{informacja} {liczba_1} i {liczba_2}")
